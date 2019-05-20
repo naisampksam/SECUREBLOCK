@@ -1,0 +1,51 @@
+   <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Send Request</strong> 
+                            </div>
+                            <div class="card-body card-block">
+                                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">Sender</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p  class="form-control-static">{{user}}</p>
+                                            <input type="hidden" id="sender" value="{{user}}">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Receiver</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="id" name="id" placeholder="Id" class="form-control"></div>
+                                    </div>
+                                   
+                                   
+                                    
+                                    
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="select" class=" form-control-label" >Field</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <select name="select" name="field" id="field" class="form-control">
+                                                <option value="0">Please select</option>
+                                                <option value="Name">Name</option>
+                                                <option value="Aadhar">Aadhar</option>
+                                                <option value="Credit card No">Credit card No</option>
+                                                <option value="Credit card Password">Credit card Password</option>
+                                                <option value="Debit card No">Debit card No</option>
+                                              <option value="Debit card password">Debit card password</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" onclick="request()" class="btn btn-primary btn-sm">
+                                    <i class="fa fa-dot-circle-o"></i> Submit
+                                </button>
+                                <button type="reset" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-ban"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+
+ <script type="text/javascript" src="/js/web3.js"></script>
+    <script type="text/javascript" src="/js/connection.js"></script>
